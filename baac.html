@@ -1,0 +1,81 @@
+<html>
+    <head>
+        <title>Yaoi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+        <link href="css/themes/default/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/nativedroid2.css" rel="stylesheet" type="text/css"/>
+        <link href="css/nativedroid2.color.blue-grey.css" rel="stylesheet" type="text/css"/>
+        <link href="css/flexboxgrid.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/material-design-iconic-font.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/mint.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div data-role="page" id="baac">
+            <div data-role="header">
+                <h1>นอกเรื่อง</h1>
+                   <ul  data-role="nd2tabs" data-swipe="true">
+                    <li data-tab="one" >Page 1 </li>
+                    <li data-tab="two" >Page 2  </li>
+                    <li data-tab="three">Page 3</li>
+                </ul>
+            </div>
+            <div data-role="content" >
+
+             
+
+                <div data-role="nd2tab" data-tab="one" >
+                    <p><a data-rel="popup" href="#pop1">BAAC </a></p>
+                    <div data-role="popup" id="pop1">
+                        <div data-role="header"  >  <h3>  Hello BAAC </h3>
+                            <a class="ui-btn ui-icon-home ui-btn-icon-notext ui-corner-all" ></a>
+                        </div>
+                        <div data-role="content" >    ธนาคารเพื่อการเกษตรและสหกรณ์การเกษตร   </div>
+                    </div>
+                </div>
+                <div data-role="nd2tab" data-tab="two">
+                    <div data-role="collapsible-set">
+                        <div data-role="collapsible">
+                            <h1>Headering 1</h1>
+                            <p>Deteil 1</p>
+                        </div>
+                        <div data-role="collapsible">
+                            <h1>Header2</h1>
+                            <p>Detail2</p>
+                            <div data-role="collapsible">
+                                <h1>header2.1</h1>
+                                <p>detail2.1</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-role="nd2tab" data-tab="three">
+                    <form>
+                            <label for="flip-2">Flip toggle switch:</label>
+                            <select name="flip-2" id="flip-2" data-role="slider" data-track-theme="b" data-theme="b">
+                                    <option value="off">Off</option>
+                                    <option value="on">On</option>
+                                </select>
+                    </form>
+                </div>
+
+
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <div class="ui-grid-d center">
+                    <div class="ui-block-a"><a  href="index.html#menu" rel="external" class="ui-shadow ui-btn ui-corner-all ui-btn-inline"><i class="zmdi zmdi-favorite zmd-fw"></i></a></div>
+                    <div class="ui-block-b"><a href="index.html#menu" rel="external" class="ui-shadow ui-btn ui-corner-all  ui-btn-inline"><i class="zmdi zmdi-long-arrow-left zmd-fw"></i></a></div>
+                    <div class="ui-block-c"><a href="index.html#home" rel="external"  class="ui-shadow ui-btn ui-corner-all ui-btn-inline"><i class="zmdi zmdi-home zmd-fw"></i>HOME</a></div>
+                    <div class="ui-block-d"><a class="ui-shadow ui-btn ui-corner-all  ui-btn-inline"><i class="zmdi zmdi-long-arrow-tab zmd-fw"></i></a></div>
+                    <div class="ui-block-e"><a class="ui-shadow ui-btn ui-corner-all  ui-btn-inline"><i class="zmdi zmdi-share zmd-fw"></i></a></div>
+                </div>
+                <h5>@MintOO</h5>
+            </div>
+        </div>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>        
+        <script src="js/nativedroid2.js" type="text/javascript"></script>
+        <script src="js/mint.js" type="text/javascript"></script>
+
+    </body>
+</html>

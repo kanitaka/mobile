@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Yaoi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+
+        <script type="text/javascript">
+            $(document).on("mobileinit", function () {
+                $.mobile.defaultPageTransition = 'flow';
+            });
+        </script>
+
+        <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+        <script src="js/mint.js" type="text/javascript"></script>
+        <link href="css/themes/default/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/mint.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    </head>
+    <body>
+        <div data-role="page" id="home">
+            <div data-role="header" data-position="fixed">
+                <h1>Welcome</h1>
+            </div>
+            <div data-role="content" class="center">
+                <img src="img/logo2.png" alt="yaoi"/>          
+
+                <div data-role="fieldcontain">
+                    <div class="ui-field-contain">
+                        <label for="username"></label>
+                         <input type="email" data-clear-btn="true" name="username" id="username" value="" placeholder="E-mail">                  
+                        <label for="password"></label>
+                        <input type="password" data-clear-btn="true" name="password" id="password" value="" autocomplete="off" placeholder="password">
+                         <input type="button" value="LOGIN">
+                    </div>
+                </div>
+                <br/>
+
+                <a href="#menu" data-inline="true" data-role="button" data-icon="bars" data-iconpos="top" >MENU</a>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h5>@MintOO</h5>
+            </div>
+        </div>
+
+
+
+        <div data-role="page" id="menu">
+            <div data-role="header" data-position="fixed">
+                <h1>MENU</h1>
+            </div>
+            <div data-role="content">
+                <div data-role="control-group" >
+                    <a href="nameYaoi.html" data-transition="slideup">
+                        <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-info">ชื่อเรื่องการ์ตูน</button> 
+                    </a>
+                    <a href="comment.html" data-transition="slideup">
+                        <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-comment">บทวิจารณ์</button>
+                    </a>	
+                    <a href="#popupBasic" data-rel="popup" >
+                        <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user" >ผู้แต่ง</button>
+                    </a>
+                    <div data-role="popup" id="popupBasic">
+                        <p>This is a YAOI manga  ^0^
+                            <br>MINTOO
+                        </p>
+                    </div>
+                    <a href="baac.html" data-transition="slideup" rel="external">
+                        <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-lock">นอกเรื่อง</button> 
+                    </a>
+                    <a href="form.html" data-transition="slideup" rel="external">
+                        <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-edit">Form</button> 
+                    </a>
+                    <a href="test.php" data-transition="slideup" rel="external">
+                        <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-edit">PHP</button> 
+                    </a>
+                    <a href="#list" >
+                        <button class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-user" >List</button>
+                    </a>
+                </div>
+                <div class="ui-grid-d center" >
+                    <div class="ui-block-a"></div>
+                    <div class="ui-block-b"></div>
+                    <div class="ui-block-c">
+                        <a href="#home" data-transition="flip"  class="ui-shadow ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext ui-btn-inline">HOME</a>
+                    </div>
+                    <div class="ui-block-d"></div>
+                    <div class="ui-block-e"></div>
+                </div>
+            </div>
+            <div data-role="footer" data-position="fixed">
+                <h5>@MintOO</h5>
+            </div>
+        </div>
+
+        <section data-role="page" id="list">
+            <header data-role="header">
+                <h2>List</h2>
+            </header>
+            <div data-role="content">
+                <form class="ui-filterable">
+                    <input id="autom-input"  data-type="search" >
+                </form>
+                <ul data-role="listview" data-inset="true" id="lvl"  data-filter-reveal="true" data-filter="true"  data-input="#autom-input">
+                    <li><a>hello</a></li>
+                </ul>
+
+
+
+
+                <div data-role="collapsible">
+                    <h2>Me</h2>
+                    <form class="ui-filterable">
+                        <input id="autoc-input"  data-type="search" >
+                    </form>
+                    <ul data-role="listview" data-filter="true" data-input="#autoc-input"   >
+                        <li><a>กทม</a></li>
+                        <li><a>ลพบุรี</a></li>
+                        <li><a>ชัยนาท</a></li>
+                        <li><a>อุดรธานี</a></li>
+                        <li><a>ปราจีนบุรี</a></li>
+                        <li><a>ยะลา</a></li>                    
+                    </ul>
+                </div>
+
+                <div data-role="collapsible-set">
+                    <div data-role="collapsible">
+                        <h2>List</h2>
+                        <ul data-role="listview" data-inset="true" data-autodividers="true" data-split-icon="plus">
+                            <li data-icon="forward"><a href="#">A</a></li>
+                            <li data-role="list-divider">-------------------</li>
+                            <li><a href="#">B</a></li>
+                            <li data-icon="false"><a href="#">C</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div data-role="collapsible"  >
+                        <h2>List</h2>
+                        <ol data-role="listview" data-inset="true" data-split-icon="plus"  data-filter="true">
+                            <li data-filtertext="กมทรนยบ"><a href="#">
+                                    <img src="img/images2.jpg" alt=""/> <h3>A</h3> <p>123456</p></a>
+                                <a href="#"></a>
+                            </li>
+                            <li data-filtertext="ขฟหกดเ้่าส"><a>
+                                    <img src="img/images4.jpg" alt=""/>
+                                    B <p class="ui-li-aside ui-li-count" >12</p></a></li>
+                            <li><a>
+                                    <img src="img/images3.jpg" alt=""/>
+                                    C</a></li>
+
+                        </ol>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript">
+            var BService_url = "http://localhost/yaoi_services/genre_id.php";
+
+            $("#list").on("pageinit", function () {
+                $("#lvl li").remove();
+            });
+            $("#list").on("pagebeforeshow", function () {
+                $.getJSON(BService_url, function (data) {
+                    $("#lvl li").remove();
+                    genre = data.items;
+                    $.each(genre, function (index, name) {
+                        $("#lvl").append("<li><a>" + name.name + "</a></li>");
+                    });
+                    $("#lvl").listview("refresh");
+                });
+
+            });
+            $(document).on('pageinit', '#home', function () {
+                //alert('home  ^o^');
+            });
+            $(document).on('pagebeforeshow', '#home', function () {
+                //alert('home before Show  *0*'); 
+            });
+            $(document).on('pageshow', '#home', function () {
+                // alert('home Show  *0*'); 
+            });
+            $(document).on('pageinit', '#comment', function () {
+                //alert('comment   ^o^');
+            });
+        </script>
+    </body>
+</html>

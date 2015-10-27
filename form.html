@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>Yaoi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js" type="text/javascript"></script>
+        <script src="js/mint.js" type="text/javascript"></script>
+        <link href="css/themes/default/jquery.mobile-1.4.5.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/mint.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body>
+        <div data-role="page" id="form">
+            <div data-role="header" data-position="fixed">
+                <h5> Form</h5>
+                    <button class="ui-btn-right ui-btn ui-btn-b ui-btn-inline ui-mini ui-corner-all ui-btn-icon-right ui-icon-check">Save</button>
+            </div>
+            <div data-role="content">
+                <div data-role="fieldcontain">
+                    <div class="ui-field-contain">
+                        <label for="textinput-name">Name : </label>
+                        <input type="text" name="textinput-name" id="textinput-name" placeholder="ชื่อ-สกุล" value="">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="date">Date : </label>
+                        <input type="text" data-role="date">
+                    </div>
+                    <div class="ui-field-contain">
+                            <label for="email">Email: </label>
+                            <input type="email" data-clear-btn="true" name="email" id="email" value="">
+                    </div>
+                    <div class="ui-field-contain">
+                         <label for="tel">Tel : </label>
+                             <input type="number" data-clear-btn="true" name="tel" id="tel" value="">
+                    </div>
+                    <div class="ui-field-contain">
+                        <label for="slider-1">Slider:</label>
+                        <input type="range" name="slider-1" id="slider-1" value="50" min="0" max="100" data-highlight="true">
+                    </div>
+                    <div class="ui-field-contain">
+                            <fieldset data-role="controlgroup">
+                                    <legend>Vertical controlgroup, checkbox:</legend>
+                                    <input type="checkbox" name="checkbox-v-1a" id="checkbox-v-1a">
+                                    <label for="checkbox-v-1a">One</label>
+                                    <input type="checkbox" name="checkbox-v-1b" id="checkbox-v-1b">
+                                    <label for="checkbox-v-1b">Two</label>
+                                    <input type="checkbox" name="checkbox-v-1c" id="checkbox-v-1c">
+                                    <label for="checkbox-v-1c">Three</label>
+                             </fieldset>
+                    </div>
+                    <div class="ui-field-contain">
+                            <label for="select-native-1">Native select:</label>
+                            <select name="select-native-1" id="select-native-1" data-native-menu="false">
+                                    <option value="small">One</option>
+                                    <option value="medium">Two</option>
+                                    <option value="large">Three</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div data-role="footer" data-position="fixed">
+                <div class="ui-grid-d center" >
+                    <div class="ui-block-a"></div>
+                    <div class="ui-block-b"></div>
+                    <div class="ui-block-c">
+                        <a href="index.html#home"  rel="external"   data-transition="flip"  
+                           class="ui-shadow ui-btn ui-corner-all ui-icon-home ui-btn-icon-notext">HOME</a>
+                    </div>
+                    <div class="ui-block-d"></div>
+                    <div class="ui-block-e"></div>
+                </div>
+              
+            </div>
+        </div>
+    </body>
+</html>
